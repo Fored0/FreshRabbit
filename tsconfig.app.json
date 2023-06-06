@@ -4,18 +4,17 @@
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue",
-    "src/vue.d.ts"
   ],
   "exclude": [
     "src/**/__tests__/*"
   ],
   "compilerOptions": {
     "composite": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "moduleResolution": "node",
     "paths": {
       "@/*": [
-        "./src/*"
+        "src/*"
       ]
     },
     "target": "ES6"

@@ -1,11 +1,24 @@
 {
   "extends": "@tsconfig/node18/tsconfig.json",
-  "include": ["vite.config.*", "vitest.config.*", "cypress.config.*", "playwright.config.*"],
+  "include": [
+    "vite.config.*",
+    "vitest.config.*",
+    "cypress.config.*",
+    "playwright.config.*"
+  ],
   "compilerOptions": {
     "composite": true,
     "module": "ESNext",
-    "types": ["node"],
+    "types": [
+      "node"
+    ],
     "moduleResolution": "node",
-    "target": "ES6"
+    "target": "ES6",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
   }
 }
